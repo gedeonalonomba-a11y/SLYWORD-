@@ -7,119 +7,128 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SLYWORD V4 | Création Digitale Professionnelle</title>
+
+<title>SLYWORD V4 | Studio Digital Premium</title>
+
+
+<meta name="description" content="SLYWORD V4 - Création digitale, retouche photo, design IA et publicité professionnelle.">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 
 
 <style>
 
 
-/* ==========================
-   SLYWORD V4 - STYLE GLOBAL
-========================== */
+/* =========================
+   SLYWORD V4 DESIGN SYSTEM
+========================= */
+
+
+:root{
+
+
+--primary:#071426;
+
+--secondary:#111C33;
+
+--purple:#6C3BFF;
+
+--gold:#D4AF37;
+
+--gold-light:#F6D365;
+
+--white:#F8FAFC;
+
+--gray:#B8C1D1;
+
+--glass:rgba(255,255,255,0.06);
+
+--border:rgba(255,255,255,0.12);
+
+--shadow:0 25px 70px rgba(0,0,0,0.45);
+
+--radius:24px;
+
+
+}
+
+
+
 
 
 *{
 
+
 margin:0;
+
 padding:0;
+
 box-sizing:border-box;
-font-family:"Arial", sans-serif;
+
 
 }
+
+
 
 
 
 html{
 
+
 scroll-behavior:smooth;
 
+
 }
+
 
 
 
 
 body{
 
-background:#050505;
-color:white;
+
+font-family:'Poppins',sans-serif;
+
+background:
+
+radial-gradient(
+circle at top right,
+rgba(108,59,255,0.25),
+transparent 35%
+),
+
+linear-gradient(
+180deg,
+#071426,
+#050912
+);
+
+
+color:var(--white);
+
+overflow-x:hidden;
+
 
 }
 
 
 
 
-/* ==========================
-   MENU
-========================== */
 
+a{
 
-nav{
-
-position:fixed;
-top:0;
-left:0;
-width:100%;
-
-background:rgba(0,0,0,0.85);
-
-backdrop-filter:blur(10px);
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:20px 8%;
-
-z-index:1000;
-
-border-bottom:1px solid #333;
-
-}
-
-
-
-.logo{
-
-font-size:32px;
-
-font-weight:bold;
-
-color:#d4af37;
-
-}
-
-
-
-
-nav ul{
-
-display:flex;
-
-gap:25px;
-
-list-style:none;
-
-}
-
-
-
-nav a{
-
-color:white;
 
 text-decoration:none;
 
-font-weight:bold;
+color:inherit;
 
-}
-
-
-
-nav a:hover{
-
-color:#d4af37;
 
 }
 
@@ -127,179 +136,640 @@ color:#d4af37;
 
 
 
-/* ==========================
-   BOUTONS
-========================== */
+img{
+
+
+width:100%;
+
+display:block;
+
+
+}
+
+
+
+
+
+section{
+
+
+padding:100px 8%;
+
+
+}
+
+
+
+
+
+.container{
+
+
+max-width:1300px;
+
+margin:auto;
+
+
+}
+
+
+
+
+
+h1,h2,h3{
+
+
+font-weight:800;
+
+
+}
+
+
+
+
+
+p{
+
+
+color:var(--gray);
+
+line-height:1.8;
+
+
+}
+
+
+
+
+
+.section-title{
+
+
+font-size:45px;
+
+text-align:center;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.section-description{
+
+
+max-width:750px;
+
+text-align:center;
+
+margin:0 auto 60px;
+
+
+}
+
+
+
+
+
+/* =========================
+   BOUTONS PREMIUM
+========================= */
+
 
 
 .btn{
 
 
-display:inline-block;
-
-background:#d4af37;
-
-color:#000;
-
-padding:15px 35px;
-
-border-radius:30px;
-
-font-weight:bold;
-
-text-decoration:none;
-
-cursor:pointer;
-
-margin-top:20px;
-
-transition:.3s;
-
-}
-
-
-
-.btn:hover{
-
-transform:scale(1.05);
-
-}
-
-
-
-
-/* ==========================
-   SECTIONS
-========================== */
-
-
-section{
-
-padding:90px 8%;
-
-}
-
-
-
-
-.title{
-
-text-align:center;
-
-font-size:40px;
-
-color:#d4af37;
-
-margin-bottom:50px;
-
-}
-
-
-
-
-/* ==========================
-   ACCUEIL
-========================== */
-
-
-.hero{
-
-
-min-height:100vh;
-
-background:
-
-linear-gradient(
-rgba(0,0,0,.65),
-rgba(0,0,0,.9)
-),
-
-url("file_00000000207c81f4bbbc9bf7c9ad9e29.png");
-
-background-size:cover;
-
-background-position:center;
-
-display:flex;
+display:inline-flex;
 
 align-items:center;
 
 justify-content:center;
 
-text-align:center;
+padding:16px 38px;
 
-padding:30px;
+border-radius:50px;
+
+font-weight:700;
+
+background:
+
+linear-gradient(
+135deg,
+var(--gold),
+var(--gold-light)
+);
+
+
+color:#111;
+
+transition:.4s;
+
+cursor:pointer;
+
 
 }
 
 
 
 
-.hero-content{
 
-max-width:800px;
-
-}
+.btn:hover{
 
 
+transform:translateY(-5px);
 
-.hero h1{
+box-shadow:
 
-font-size:55px;
+0 15px 40px rgba(212,175,55,.35);
 
-color:white;
-
-margin-bottom:25px;
 
 }
 
 
 
 
-.hero h1 span{
 
-color:#d4af37;
+
+
+/* =========================
+   CARTES PREMIUM
+========================= */
+
+
+
+.glass-card{
+
+
+background:var(--glass);
+
+border:
+
+1px solid var(--border);
+
+
+backdrop-filter:blur(20px);
+
+border-radius:var(--radius);
+
+box-shadow:var(--shadow);
+
+
+}
+
+
+
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+
+@keyframes fadeUp{
+
+
+from{
+
+
+opacity:0;
+
+transform:translateY(40px);
+
+
+}
+
+
+to{
+
+
+opacity:1;
+
+transform:translateY(0);
+
+
+}
+
 
 }
 
 
 
 
-.hero p{
 
-font-size:22px;
+.animate{
 
-color:#ddd;
 
-line-height:1.6;
+animation:fadeUp 1s ease forwards;
+
 
 }
 
 
 
-.info{
 
-margin-top:25px;
 
-color:#d4af37;
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
 
-font-size:18px;
+
+@media(max-width:900px){
+
+
+section{
+
+
+padding:70px 5%;
+
 
 }
+
+
+
+.section-title{
+
+
+font-size:32px;
+
+
+}
+
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body><!-- ==========================
+     NAVBAR PREMIUM
+========================== -->
+
+
+<header class="navbar">
+
+
+<div class="logo">
+
+SLY<span>WORD</span>
+
+</div>
+
+
+
+<nav class="desktop-menu">
+
+
+<a href="#accueil">
+
+Accueil
+
+</a>
+
+
+<a href="#services">
+
+Services
+
+</a>
+
+
+<a href="#offres">
+
+Offres
+
+</a>
+
+
+<a href="#commande">
+
+Commande
+
+</a>
+
+
+<a href="#contact">
+
+Contact
+
+</a>
+
+
+</nav>
+
+
+
+<a href="#commande" class="btn navbar-btn">
+
+Commander
+
+</a>
+
+
+
+<div class="mobile-menu-btn" onclick="openMenu()">
+
+
+☰
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+<div class="mobile-menu" id="mobileMenu">
+
+
+<a href="#accueil">Accueil</a>
+
+<a href="#services">Services</a>
+
+<a href="#offres">Offres</a>
+
+<a href="#commande">Commande</a>
+
+<a href="#contact">Contact</a>
+
+
+</div>
+
+
+
+
+
+
+
+<style>
+
+
+/* ==========================
+   NAVBAR
+========================== */
+
+
+.navbar{
+
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:85px;
+
+padding:0 7%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+
+background:
+
+rgba(7,20,38,0.75);
+
+
+backdrop-filter:blur(20px);
+
+
+border-bottom:
+
+1px solid rgba(255,255,255,.08);
+
+
+z-index:1000;
+
+
+}
+
+
+
+
+
+
+.logo{
+
+
+font-size:32px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+
+}
+
+
+
+.logo span{
+
+
+color:var(--gold);
+
+
+}
+
+
+
+
+
+.desktop-menu{
+
+
+display:flex;
+
+gap:35px;
+
+
+}
+
+
+
+
+
+.desktop-menu a{
+
+
+font-size:15px;
+
+font-weight:600;
+
+color:var(--white);
+
+transition:.3s;
+
+
+}
+
+
+
+
+
+.desktop-menu a:hover{
+
+
+color:var(--gold);
+
+
+}
+
+
+
+
+
+.navbar-btn{
+
+
+padding:13px 28px;
+
+font-size:14px;
+
+
+}
+
+
+
 
 
 
 /* ==========================
-   RESPONSIVE MOBILE
+   MENU MOBILE
 ========================== */
 
 
-@media(max-width:700px){
 
+.mobile-menu-btn{
 
-nav ul{
 
 display:none;
+
+font-size:30px;
+
+cursor:pointer;
+
+
+}
+
+
+
+
+.mobile-menu{
+
+
+position:fixed;
+
+top:85px;
+
+left:0;
+
+width:100%;
+
+
+background:#071426;
+
+
+display:none;
+
+flex-direction:column;
+
+padding:30px;
+
+
+gap:25px;
+
+
+z-index:999;
+
+
+border-bottom:
+
+1px solid rgba(255,255,255,.1);
+
+
+}
+
+
+
+
+
+.mobile-menu a{
+
+
+font-weight:600;
+
+font-size:18px;
+
+
+}
+
+
+
+
+
+.mobile-menu.active{
+
+
+display:flex;
+
+
+}
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+
+.desktop-menu,
+
+
+.navbar-btn{
+
+
+display:none;
+
+
+}
+
+
+
+.mobile-menu-btn{
+
+
+display:block;
+
+
+}
+
+
+
+.navbar{
+
+
+padding:0 25px;
+
 
 }
 
@@ -307,23 +777,9 @@ display:none;
 
 .logo{
 
-font-size:25px;
 
-}
+font-size:27px;
 
-
-
-.hero h1{
-
-font-size:38px;
-
-}
-
-
-
-.hero p{
-
-font-size:18px;
 
 }
 
@@ -335,152 +791,72 @@ font-size:18px;
 </style>
 
 
-</head>
-<body>
 
 
-<!-- ==========================
-     MENU NAVIGATION
+
+
+
+<script>
+
+
+function openMenu(){
+
+
+document
+
+.getElementById("mobileMenu")
+
+.classList.toggle("active");
+
+
+}
+
+
+
+   </script><!-- ==========================
+     HERO / ACCUEIL PREMIUM
 ========================== -->
 
 
-<nav>
+<section id="accueil" class="hero">
 
 
-<div class="logo">
-SLYWORD
-</div>
-
-
-
-<ul>
-
-
-<li>
-<a href="#accueil">
-Accueil
-</a>
-</li>
+<div class="hero-container">
 
 
 
-<li>
-<a href="#services">
-Services
-</a>
-</li>
+<div class="hero-content animate">
 
 
+<p class="hero-tag">
 
-<li>
-<a href="#portfolio">
-Portfolio
-</a>
-</li>
-
-
-
-<li>
-<a href="#commande">
-Commande
-</a>
-</li>
-
-
-
-<li>
-<a href="#jeux">
-Jeux
-</a>
-</li>
-
-
-
-<li>
-<a href="#avis">
-Avis
-</a>
-</li>
-
-
-
-<li>
-<a href="#contact">
-Contact
-</a>
-</li>
-
-
-
-</ul>
-
-
-</nav>
-
-
-
-
-
-
-
-
-<!-- ==========================
-     ACCUEIL
-========================== -->
-
-
-<section class="hero" id="accueil">
-
-
-<div class="hero-content">
-
-
-
-<h1>
-
-Votre créativité,
-<span>
-notre expertise
-</span>
-
-</h1>
-
-
-
-
-<p>
-
-SLYWORD transforme vos idées, vos photos et vos projets en créations digitales professionnelles.
+✨ STUDIO DIGITAL PREMIUM
 
 </p>
 
 
 
+<h1>
 
 
-<div class="info">
+Transformez vos idées en créations exceptionnelles
 
 
-🕒 Disponible du Lundi au Samedi
-
-<br><br>
-
-📲 Commandes WhatsApp disponibles 24h/24
-
-
-</div>
+</h1>
 
 
 
+<p>
 
 
-<a href="#services" class="btn">
-
-Découvrir nos services
-
-</a>
+SLYWORD V4 accompagne les particuliers et entreprises avec des créations visuelles modernes, de la retouche professionnelle et des solutions digitales adaptées.
 
 
+</p>
+
+
+
+<div class="hero-buttons">
 
 
 <a href="#commande" class="btn">
@@ -491,8 +867,756 @@ Commander maintenant
 
 
 
+<a href="#services" class="secondary-btn">
+
+Découvrir nos services
+
+</a>
+
+
 </div>
 
+
+
+</div>
+
+
+
+
+
+
+<div class="hero-image animate">
+
+
+<div class="image-glow"></div>
+
+
+
+<img 
+src="file_0000000067cc82439628c24e2a60ba06.png"
+alt="Imagine Premium SLYWORD V4"
+>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<style>
+
+
+/* ==========================
+   HERO DESIGN
+========================== */
+
+
+.hero{
+
+
+min-height:100vh;
+
+padding-top:130px;
+
+display:flex;
+
+align-items:center;
+
+
+background:
+
+
+radial-gradient(
+
+circle at 80% 30%,
+
+rgba(108,59,255,.35),
+
+transparent 35%
+
+);
+
+
+}
+
+
+
+
+
+.hero-container{
+
+
+max-width:1300px;
+
+margin:auto;
+
+width:100%;
+
+display:grid;
+
+grid-template-columns:
+
+1fr 1fr;
+
+align-items:center;
+
+gap:70px;
+
+
+}
+
+
+
+
+
+.hero-tag{
+
+
+display:inline-block;
+
+padding:10px 22px;
+
+border-radius:50px;
+
+
+background:
+
+rgba(212,175,55,.12);
+
+
+color:var(--gold-light);
+
+font-weight:700;
+
+margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.hero-content h1{
+
+
+font-size:62px;
+
+margin-bottom:25px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#fff,
+
+#D4AF37
+
+);
+
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+
+}
+
+
+
+
+
+.hero-content p{
+
+
+font-size:18px;
+
+max-width:600px;
+
+margin-bottom:35px;
+
+
+}
+
+
+
+
+
+.hero-buttons{
+
+
+display:flex;
+
+gap:20px;
+
+align-items:center;
+
+
+}
+
+
+
+
+
+.secondary-btn{
+
+
+padding:15px 35px;
+
+border-radius:50px;
+
+
+border:
+
+1px solid rgba(255,255,255,.3);
+
+
+color:white;
+
+font-weight:600;
+
+
+transition:.3s;
+
+
+}
+
+
+
+
+
+.secondary-btn:hover{
+
+
+border-color:var(--gold);
+
+color:var(--gold);
+
+
+}
+
+
+
+
+
+.hero-image{
+
+
+position:relative;
+
+display:flex;
+
+justify-content:center;
+
+
+}
+
+
+
+
+
+.hero-image img{
+
+
+position:relative;
+
+z-index:2;
+
+
+width:100%;
+
+max-width:520px;
+
+
+border-radius:30px;
+
+
+box-shadow:
+
+0 30px 80px rgba(0,0,0,.6);
+
+
+}
+
+
+
+.image-glow{
+
+
+position:absolute;
+
+
+width:350px;
+
+height:350px;
+
+
+background:
+
+var(--purple);
+
+
+filter:blur(120px);
+
+
+opacity:.5;
+
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+
+.hero{
+
+
+padding-top:120px;
+
+
+}
+
+
+
+.hero-container{
+
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+
+}
+
+
+
+.hero-content h1{
+
+
+font-size:38px;
+
+
+}
+
+
+
+.hero-content p{
+
+
+font-size:16px;
+
+
+}
+
+
+
+.hero-buttons{
+
+
+justify-content:center;
+
+flex-direction:column;
+
+
+}
+
+
+
+.hero-image img{
+
+
+max-width:350px;
+
+
+}
+
+
+}
+
+
+
+   </style><!-- ==========================
+     PRESENTATION SLYWORD
+========================== -->
+
+
+<section class="presentation">
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+
+Pourquoi choisir SLYWORD ?
+
+</h2>
+
+
+
+<p class="section-description">
+
+Nous transformons vos idées en contenus visuels professionnels grâce au design moderne, à la retouche avancée et aux solutions digitales.
+
+</p>
+
+
+
+
+
+<div class="advantages">
+
+
+<div class="glass-card advantage-card">
+
+<h3>🎨 Créativité</h3>
+
+<p>
+Des créations originales adaptées à votre image.
+</p>
+
+</div>
+
+
+
+<div class="glass-card advantage-card">
+
+<h3>⚡ Rapidité</h3>
+
+<p>
+Un service efficace avec un suivi professionnel.
+</p>
+
+</div>
+
+
+
+
+<div class="glass-card advantage-card">
+
+<h3>🤖 Technologie</h3>
+
+<p>
+Des outils modernes pour des résultats de qualité.
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================
+     SERVICES
+========================== -->
+
+
+<section id="services">
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+
+Nos Services
+
+</h2>
+
+
+
+<p class="section-description">
+
+Découvrez nos solutions digitales pour améliorer votre image et développer votre activité.
+
+</p>
+
+
+
+
+
+<div class="services-grid">
+
+
+
+
+
+<!-- SERVICE 1 -->
+
+
+<div class="service-card glass-card">
+
+
+<img src="file_000000007fb4820aa743183e42ab5888.png"
+alt="Retouche photo produit">
+
+
+<div class="service-content">
+
+
+<h3>
+📸 Retouche photo produit
+</h3>
+
+
+<p>
+Transformation de vos photos simples en images professionnelles adaptées à la vente.
+</p>
+
+
+<strong>
+À partir de 500 FCFA
+</strong>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- SERVICE 2 -->
+
+
+<div class="service-card glass-card">
+
+
+<img src="file_000000009ec08243bbe4007ca070539f.png"
+alt="Retouche photo particulier">
+
+
+<div class="service-content">
+
+
+<h3>
+👤 Retouche particulier
+</h3>
+
+
+<p>
+Amélioration de vos photos personnelles avec un rendu élégant.
+</p>
+
+
+<strong>
+À partir de 500 FCFA
+</strong>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- SERVICE 3 -->
+
+
+<div class="service-card glass-card">
+
+
+<img src="file_00000000207c81f4bbbc9bf7c9ad9e29.png"
+alt="Fond d'écran">
+
+
+<div class="service-content">
+
+
+<h3>
+🖼️ Fond d'écran personnalisé
+</h3>
+
+
+<p>
+Création de fonds d'écran uniques selon votre style.
+</p>
+
+
+<strong>
+À partir de 500 FCFA
+</strong>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- SERVICE 4 -->
+
+
+<div class="service-card glass-card">
+
+
+<img src="file_000000006dec8210bcec147302fd2a66.png"
+alt="IA Design">
+
+
+<div class="service-content">
+
+
+<h3>
+🤖 IA Design & Création
+</h3>
+
+
+<p>
+Créations visuelles modernes grâce aux nouvelles technologies.
+</p>
+
+
+<strong>
+À partir de 1000 FCFA
+</strong>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- SERVICE 5 -->
+
+
+<div class="service-card glass-card">
+
+
+<img src="file_00000000add88246aac4574dba27c6b1.png"
+alt="Publication commerciale">
+
+
+<div class="service-content">
+
+
+<h3>
+📢 Publicité commerciale
+</h3>
+
+
+<p>
+Création de visuels adaptés aux réseaux sociaux.
+</p>
+
+
+<strong>
+À partir de 1000 FCFA
+</strong>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- SERVICE 6 -->
+
+
+<div class="service-card glass-card">
+
+
+<img src="file_00000000df1081f488b930383c9cb071.png"
+alt="Affiche professionnelle">
+
+
+<div class="service-content">
+
+
+<h3>
+🎨 Affiche professionnelle
+</h3>
+
+
+<p>
+Des affiches modernes pour vos événements et activités.
+</p>
+
+
+<strong>
+À partir de 1000 FCFA
+</strong>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</div>
 
 
 </section>
@@ -505,42 +1629,1342 @@ Commander maintenant
 
 
 
-<!-- ==========================
-     PRESENTATION SLYWORD
+<style>
+
+
+/* ==========================
+   PRESENTATION
+========================== */
+
+
+.advantages{
+
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+
+}
+
+
+
+
+
+.advantage-card{
+
+
+padding:35px;
+
+text-align:center;
+
+
+}
+
+
+
+.advantage-card h3{
+
+
+color:var(--gold-light);
+
+margin-bottom:15px;
+
+
+}
+
+
+
+
+
+/* ==========================
+   SERVICES GRID
+========================== */
+
+
+
+.services-grid{
+
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+
+}
+
+
+
+
+
+.service-card{
+
+
+overflow:hidden;
+
+transition:.4s;
+
+
+}
+
+
+
+
+
+.service-card:hover{
+
+
+transform:translateY(-10px);
+
+
+}
+
+
+
+.service-card img{
+
+
+height:260px;
+
+object-fit:cover;
+
+
+}
+
+
+
+.service-content{
+
+
+padding:25px;
+
+
+}
+
+
+
+.service-content h3{
+
+
+margin-bottom:15px;
+
+font-size:22px;
+
+
+}
+
+
+
+.service-content strong{
+
+
+display:block;
+
+margin-top:20px;
+
+color:var(--gold-light);
+
+
+}
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+.advantages,
+
+.services-grid{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.service-card img{
+
+
+height:230px;
+
+
+}
+
+
+}
+
+
+
+   </style><!-- ==========================
+     OFFRE SPECIALE
 ========================== -->
 
 
-<section id="presentation">
+<section id="offres" class="offer-section">
+
+
+<div class="container">
 
 
 
-<h2 class="title">
+<div class="offer-box glass-card">
 
-À propos de SLYWORD
+
+
+<div class="offer-content">
+
+
+<span class="offer-tag">
+
+🔥 OFFRE LIMITÉE
+
+</span>
+
+
+
+<h2>
+
+Obtenez -20% sur votre commande
+
+</h2>
+
+
+
+<p>
+
+Commandez 3 services ou plus et profitez automatiquement d'une réduction exclusive sur votre projet.
+
+</p>
+
+
+
+<a href="#commande" class="btn">
+
+Profiter de l'offre
+
+</a>
+
+
+</div>
+
+
+
+
+<div class="offer-number">
+
+-20%
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================
+     PROCESSUS
+========================== -->
+
+
+<section class="process-section">
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+
+Comment ça marche ?
+
+</h2>
+
+
+
+<p class="section-description">
+
+Un processus simple, rapide et professionnel pour garantir la qualité de votre projet.
+
+</p>
+
+
+
+
+
+<div class="process-grid">
+
+
+
+
+
+<div class="glass-card process-card">
+
+
+<div class="process-icon">
+
+1
+
+</div>
+
+
+<h3>
+
+Choisissez votre service
+
+</h3>
+
+
+<p>
+
+Sélectionnez la création dont vous avez besoin.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="glass-card process-card">
+
+
+<div class="process-icon">
+
+2
+
+</div>
+
+
+<h3>
+
+Effectuez le paiement
+
+</h3>
+
+
+<p>
+
+La réalisation commence uniquement après confirmation du paiement.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="glass-card process-card">
+
+
+<div class="process-icon">
+
+3
+
+</div>
+
+
+<h3>
+
+Recevez votre création
+
+</h3>
+
+
+<p>
+
+Votre résultat final vous est envoyé après réalisation.
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+/* ==========================
+   OFFER DESIGN
+========================== */
+
+
+.offer-box{
+
+
+padding:50px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:30px;
+
+
+border:
+
+1px solid rgba(212,175,55,.35);
+
+
+background:
+
+
+linear-gradient(
+
+135deg,
+
+rgba(108,59,255,.15),
+
+rgba(212,175,55,.08)
+
+);
+
+
+}
+
+
+
+
+.offer-tag{
+
+
+display:inline-block;
+
+padding:8px 18px;
+
+border-radius:50px;
+
+background:rgba(212,175,55,.15);
+
+color:var(--gold-light);
+
+font-weight:700;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+
+.offer-content h2{
+
+
+font-size:40px;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+
+.offer-content p{
+
+
+max-width:600px;
+
+margin-bottom:30px;
+
+
+}
+
+
+
+
+.offer-number{
+
+
+font-size:100px;
+
+font-weight:900;
+
+
+background:
+
+linear-gradient(
+
+135deg,
+
+var(--gold),
+
+white
+
+);
+
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+
+}
+
+
+
+
+
+/* ==========================
+   PROCESS
+========================== */
+
+
+
+.process-grid{
+
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+
+}
+
+
+
+
+
+.process-card{
+
+
+padding:35px;
+
+text-align:center;
+
+
+}
+
+
+
+
+
+.process-icon{
+
+
+width:70px;
+
+height:70px;
+
+margin:0 auto 25px;
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+
+border-radius:50%;
+
+
+background:
+
+linear-gradient(
+
+135deg,
+
+var(--gold),
+
+var(--gold-light)
+
+);
+
+
+color:#111;
+
+font-size:28px;
+
+font-weight:900;
+
+
+}
+
+
+
+
+
+.process-card h3{
+
+
+margin-bottom:15px;
+
+color:white;
+
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+
+.offer-box{
+
+
+flex-direction:column;
+
+text-align:center;
+
+
+}
+
+
+
+.offer-content h2{
+
+
+font-size:30px;
+
+
+}
+
+
+
+.offer-number{
+
+
+font-size:70px;
+
+
+}
+
+
+
+.process-grid{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+}
+
+
+
+   </style><!-- ==========================
+     COMMANDE PROFESSIONNELLE
+========================== -->
+
+
+<section id="commande" class="order-section">
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+
+Commander votre projet
+
+</h2>
+
+
+<p class="section-description">
+
+Choisissez vos services. Le montant sera calculé automatiquement avant confirmation.
+
+</p>
+
+
+
+
+<div class="order-container">
+
+
+
+<div class="glass-card order-form">
+
+
+<h3>
+
+Sélectionnez vos services
+
+</h3>
+
+
+
+<label class="service-option">
+
+<input 
+type="checkbox"
+class="service-check"
+value="Retouche photo produit"
+data-price="500">
+
+<span>
+📸 Retouche photo produit
+</span>
+
+<strong>
+500 FCFA
+</strong>
+
+</label>
+
+
+
+
+<label class="service-option">
+
+<input 
+type="checkbox"
+class="service-check"
+value="Retouche particulier"
+data-price="500">
+
+<span>
+👤 Retouche particulier
+</span>
+
+<strong>
+500 FCFA
+</strong>
+
+</label>
+
+
+
+
+
+<label class="service-option">
+
+<input 
+type="checkbox"
+class="service-check"
+value="Fond d'écran personnalisé"
+data-price="500">
+
+<span>
+🖼️ Fond d'écran personnalisé
+</span>
+
+<strong>
+500 FCFA
+</strong>
+
+</label>
+
+
+
+
+
+<label class="service-option">
+
+<input 
+type="checkbox"
+class="service-check"
+value="IA Design"
+data-price="1000">
+
+<span>
+🤖 IA Design
+</span>
+
+<strong>
+1000 FCFA
+</strong>
+
+</label>
+
+
+
+
+
+<label class="service-option">
+
+<input 
+type="checkbox"
+class="service-check"
+value="Publicité commerciale"
+data-price="1000">
+
+<span>
+📢 Publicité commerciale
+</span>
+
+<strong>
+1000 FCFA
+</strong>
+
+</label>
+
+
+
+
+
+<label class="service-option">
+
+<input 
+type="checkbox"
+class="service-check"
+value="Affiche professionnelle"
+data-price="1000">
+
+<span>
+🎨 Affiche professionnelle
+</span>
+
+<strong>
+1000 FCFA
+</strong>
+
+</label>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="glass-card summary-box">
+
+
+<h3>
+
+Résumé de commande
+
+</h3>
+
+
+
+<p>
+Services choisis :
+<span id="selected-count">0</span>
+</p>
+
+
+
+<p>
+Prix initial :
+<span id="initial-price">0</span> FCFA
+</p>
+
+
+
+<p>
+Réduction :
+<span id="discount-value">0</span> %
+</p>
+
+
+
+<h2>
+
+Total :
+<span id="final-price">0</span> FCFA
 
 </h2>
 
 
 
 
-<div class="card">
+<input 
+id="client-name"
+type="text"
+placeholder="Votre nom">
+
+
+
+<textarea 
+id="project-message"
+placeholder="Décrivez votre projet">
+</textarea>
+
+
+
+
+<button 
+class="btn"
+onclick="prepareOrder()">
+
+Continuer vers WhatsApp
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<style>
+
+
+.order-container{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:35px;
+
+}
+
+
+
+.order-form,
+.summary-box{
+
+padding:35px;
+
+}
+
+
+
+.service-option{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:18px;
+
+margin-bottom:15px;
+
+background:rgba(255,255,255,.04);
+
+border-radius:15px;
+
+cursor:pointer;
+
+}
+
+
+
+.service-option strong{
+
+color:var(--gold-light);
+
+}
+
+
+
+.service-option input{
+
+accent-color:var(--gold);
+
+}
+
+
+
+.summary-box input,
+.summary-box textarea{
+
+width:100%;
+
+margin-top:20px;
+
+padding:15px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:15px;
+
+color:white;
+
+font-family:inherit;
+
+}
+
+
+
+.summary-box textarea{
+
+height:120px;
+
+resize:none;
+
+}
+
+
+
+.summary-box span{
+
+color:var(--gold-light);
+
+font-weight:700;
+
+}
+
+
+
+@media(max-width:900px){
+
+.order-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+</style>
+
+
+
+
+
+
+
+<script>
+
+
+const serviceChecks = document.querySelectorAll(".service-check");
+
+
+
+serviceChecks.forEach(service => {
+
+service.addEventListener("change", updateOrder);
+
+});
+
+
+
+
+
+function updateOrder(){
+
+
+let count = 0;
+
+let initialTotal = 0;
+
+
+
+serviceChecks.forEach(service => {
+
+
+if(service.checked){
+
+
+count++;
+
+initialTotal += Number(service.dataset.price);
+
+
+}
+
+
+});
+
+
+
+
+
+let discount = 0;
+
+let finalTotal = initialTotal;
+
+
+
+if(count >= 3){
+
+
+discount = 20;
+
+
+finalTotal = initialTotal - (initialTotal * 20 / 100);
+
+
+}
+
+
+
+
+
+document.getElementById("selected-count").textContent = count;
+
+
+document.getElementById("initial-price").textContent = initialTotal;
+
+
+document.getElementById("discount-value").textContent = discount;
+
+
+document.getElementById("final-price").textContent = Math.round(finalTotal);
+
+
+
+}
+
+
+
+
+
+
+function prepareOrder(){
+
+
+
+let selected = [];
+
+
+
+serviceChecks.forEach(service => {
+
+
+if(service.checked){
+
+
+selected.push(service.value);
+
+
+}
+
+
+});
+
+
+
+
+
+if(selected.length === 0){
+
+
+alert("Veuillez sélectionner au moins un service.");
+
+
+return;
+
+
+}
+
+
+
+
+let name = document.getElementById("client-name").value;
+
+
+let project = document.getElementById("project-message").value;
+
+
+
+
+let message =
+
+`Bonjour SLYWORD 👋
+
+Je souhaite commander :
+
+${selected.join(", ")}
+
+
+Nom :
+
+${name}
+
+
+Projet :
+
+${project}
+
+
+Je confirme que le paiement sera effectué avant la réalisation.`;
+
+
+
+
+
+window.open(
+
+"https://wa.me/2290147180865?text="
+
++
+
+encodeURIComponent(message)
+
+);
+
+
+}
+
+
+
+   </script><!-- ==========================
+     PAIEMENT & CONTACT
+========================== -->
+
+
+<section class="payment-section">
+
+
+<div class="container">
+
+
+
+<div class="payment-box glass-card">
+
+
+
+<div class="payment-content">
+
+
+<span class="payment-tag">
+
+💳 PAIEMENT
+
+</span>
+
+
+
+
+<h2>
+
+Votre projet commence après confirmation du paiement
+
+</h2>
+
 
 
 
 <p>
 
-SLYWORD est un studio de création digitale spécialisé dans la retouche photo, le design, la publicité et les créations visuelles modernes.
+Afin de garantir un service sérieux et professionnel, la réalisation débute uniquement après réception et confirmation du paiement.
 
 </p>
 
 
-<br>
 
+
+
+<div class="payment-number">
+
+
+📱 WhatsApp :
+
+<strong>
+
+0147180865
+
+</strong>
+
+
+</div>
+
+
+
+
+
+<a href="https://wa.me/2290147180865" 
+class="btn">
+
+Contacter maintenant
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="security-card">
+
+
+<div>
+
+🔒
+
+</div>
+
+
+<h3>
+
+Service sécurisé
+
+</h3>
 
 
 <p>
 
-Notre objectif est d'aider les particuliers, les entrepreneurs et les entreprises à obtenir une image professionnelle grâce à des créations adaptées à leurs besoins.
+Une organisation claire pour éviter les pertes de temps et garantir un meilleur suivi.
 
 </p>
 
@@ -548,6 +2972,15 @@ Notre objectif est d'aider les particuliers, les entrepreneurs et les entreprise
 
 </div>
 
+
+
+
+</div>
+
+
+
+
+</div>
 
 
 </section>
@@ -565,35 +2998,67 @@ Notre objectif est d'aider les particuliers, les entrepreneurs et les entreprise
 ========================== -->
 
 
-<section id="disponibilite">
+<section id="contact" class="contact-section">
 
 
-<h2 class="title">
+<div class="container">
 
-Horaires SLYWORD
+
+
+<h2 class="section-title">
+
+Nous contacter
 
 </h2>
 
 
 
-<div class="card-container">
+
+<p class="section-description">
+
+Une question ? Un projet ? Notre équipe reste disponible pour vous accompagner.
+
+</p>
 
 
 
-<div class="card">
+
+
+<div class="contact-grid">
+
+
+
+
+
+<div class="glass-card contact-card">
+
 
 <h3>
 
-🟢 Lundi - Samedi
+🕒 Disponibilité
 
 </h3>
 
 
 <p>
 
-Traitement des commandes et réalisations.
+Disponible pour répondre aux demandes et préparer vos projets.
 
 </p>
+
+
+<ul>
+
+
+<li>Lundi - Vendredi : 18h - 22h</li>
+
+
+<li>Samedi - Dimanche : 9h - 22h</li>
+
+
+</ul>
+
+
 
 </div>
 
@@ -601,7 +3066,9 @@ Traitement des commandes et réalisations.
 
 
 
-<div class="card">
+
+
+<div class="glass-card contact-card">
 
 
 <h3>
@@ -613,830 +3080,18 @@ Traitement des commandes et réalisations.
 
 <p>
 
-Les demandes peuvent être envoyées à tout moment.
+Contactez directement SLYWORD pour votre commande.
 
 </p>
 
 
-</div>
 
+<a href="https://wa.me/2290147180865"
+class="btn">
 
 
+Écrire sur WhatsApp
 
-<div class="card">
-
-
-<h3>
-
-🚀 Livraison
-
-</h3>
-
-
-<p>
-
-Les délais dépendent du type de création demandée.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-    </section>
-<!-- ==========================
-     SERVICES SLYWORD
-========================== -->
-
-
-<section id="services">
-
-
-<h2 class="title">
-
-Nos Services
-
-</h2>
-
-
-
-<div class="card-container">
-
-
-
-
-
-
-<div class="card">
-
-
-<img src="file_000000007fb4820aa743183e42ab5888.png">
-
-
-<h3>
-
-📸 Retouche photo produit
-
-</h3>
-
-
-<p>
-
-Des images professionnelles pour mieux présenter vos produits.
-
-</p>
-
-
-<strong>
-
-500 FCFA
-
-</strong>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="card">
-
-
-<img src="file_000000009ec08243bbe4007ca070539f.png">
-
-
-<h3>
-
-👤 Retouche photo particulier
-
-</h3>
-
-
-<p>
-
-Amélioration de vos photos personnelles et souvenirs.
-
-</p>
-
-
-<strong>
-
-500 FCFA
-
-</strong>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="card">
-
-
-<img src="file_0000000067cc82439628c24e2a60ba06.png">
-
-
-<h3>
-
-⭐ Imagine Premium
-
-</h3>
-
-
-<p>
-
-Création visuelle premium adaptée à vos idées.
-
-</p>
-
-
-<strong>
-
-1000 FCFA
-
-</strong>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="card">
-
-
-<img src="file_000000006dec8210bcec147302fd2a66.png">
-
-
-<h3>
-
-🤖 IA Design & Création
-
-</h3>
-
-
-<p>
-
-Créations modernes grâce aux outils d'intelligence artificielle.
-
-</p>
-
-
-<strong>
-
-1000 FCFA
-
-</strong>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="card">
-
-
-<img src="file_00000000add88246aac4574dba27c6b1.png">
-
-
-<h3>
-
-📢 Image & Publication commerciale
-
-</h3>
-
-
-<p>
-
-Des visuels conçus pour promouvoir vos activités.
-
-</p>
-
-
-<strong>
-
-1000 FCFA
-
-</strong>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="card">
-
-
-<img src="file_00000000df1081f488b930383c9cb071.png">
-
-
-<h3>
-
-🖼️ Affiche professionnelle
-
-</h3>
-
-
-<p>
-
-Affiches modernes pour événements et entreprises.
-
-</p>
-
-
-<strong>
-
-1000 FCFA
-
-</strong>
-
-
-</div>
-
-
-
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-<!-- ==========================
-     PORTFOLIO
-========================== -->
-
-
-<section id="portfolio">
-
-
-<h2 class="title">
-
-Nos Créations
-
-</h2>
-
-
-
-<div class="card-container">
-
-
-
-
-
-<div class="card">
-
-
-<img src="file_000000002a6c824384302e7d8bea56b7.png">
-
-
-<h3>
-
-Famille
-
-</h3>
-
-
-<p>
-
-Créations pour vos souvenirs familiaux.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="card">
-
-
-<img src="file_00000000b6d871f4a90bb9a1b4a5c287.png">
-
-
-<h3>
-
-Couple
-
-</h3>
-
-
-<p>
-
-Créations romantiques personnalisées.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="card">
-
-
-<img src="file_00000000cbd07243986506db52daa5c4.png">
-
-
-<h3>
-
-Bébé
-
-</h3>
-
-
-<p>
-
-Valorisation de vos souvenirs précieux.
-
-</p>
-
-
-</div>
-
-
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-<!-- ==========================
-     OFFRE SPECIALE
-========================== -->
-
-
-<section id="offre">
-
-
-<div class="card">
-
-
-<h2 class="title">
-
-🎁 Offre SLYWORD
-
-</h2>
-
-
-
-<p style="text-align:center;">
-
-
-Commandez <strong>3 services ou plus</strong>
-
-
-et obtenez automatiquement :
-
-
-</p>
-
-
-
-<h2 style="text-align:center;color:#d4af37;">
-
-
--20% DE REDUCTION
-
-
-</h2>
-
-
-
-</div>
-
-
-    </section>
-<!-- ==========================
-     COMMANDE
-========================== -->
-
-
-<section id="commande">
-
-
-<h2 class="title">
-Commander
-</h2>
-
-
-
-<div class="card">
-
-
-<h3>
-Choisissez vos services
-</h3>
-
-
-
-<label>
-<input type="checkbox" class="service" data-price="500" value="Retouche photo produit">
-Retouche photo produit - 500 FCFA
-</label>
-
-<br><br>
-
-
-<label>
-<input type="checkbox" class="service" data-price="500" value="Retouche photo particulier">
-Retouche photo particulier - 500 FCFA
-</label>
-
-<br><br>
-
-
-<label>
-<input type="checkbox" class="service" data-price="1000" value="Imagine Premium">
-Imagine Premium - 1000 FCFA
-</label>
-
-<br><br>
-
-
-<label>
-<input type="checkbox" class="service" data-price="1000" value="IA Design">
-IA Design - 1000 FCFA
-</label>
-
-<br><br>
-
-
-<label>
-<input type="checkbox" class="service" data-price="1000" value="Affiche">
-Affiche professionnelle - 1000 FCFA
-</label>
-
-<br><br>
-
-
-<label>
-<input type="checkbox" class="service" data-price="1000" value="Publication commerciale">
-Publication commerciale - 1000 FCFA
-</label>
-
-
-
-<br><br>
-
-
-<input id="nomClient" placeholder="Votre nom">
-
-
-<textarea id="besoinClient" placeholder="Décrivez votre besoin"></textarea>
-
-
-
-<h3>
-Total :
-<span id="total">
-0
-</span>
-FCFA
-</h3>
-
-
-<h3 style="color:#d4af37">
-
-Réduction :
-<span id="reduction">
-0
-</span>%
-
-</h3>
-
-
-
-<p>
-
-🔒 Le paiement est obligatoire avant le début de la réalisation.
-
-</p>
-
-
-
-<button class="btn" onclick="commander()">
-
-Continuer
-
-</button>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==========================
-     PAIEMENT
-========================== -->
-
-
-<section id="paiement">
-
-
-<h2 class="title">
-💳 Paiement
-</h2>
-
-
-
-<div class="card">
-
-
-<p>
-
-Effectuez votre paiement puis envoyez votre preuve sur WhatsApp SLYWORD.
-
-</p>
-
-
-<br>
-
-
-<h3>
-📱 Numéro paiement :
-</h3>
-
-
-<h2 style="color:#d4af37">
-
-01 47 18 08 65
-
-</h2>
-
-
-
-<button class="btn" onclick="preuvePaiement()">
-
-Envoyer ma preuve
-
-</button>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- ==========================
-     JEUX SLYWORD
-========================== -->
-
-
-<section id="jeux">
-
-
-<h2 class="title">
-
-🎮 Jeux SLYWORD
-
-</h2>
-
-
-
-<div class="card-container">
-
-
-
-<div class="card">
-
-
-<h3>
-🎡 Roue du destin
-</h3>
-
-
-<button class="btn" onclick="roue()">
-
-Tourner
-
-</button>
-
-
-<p id="resultatRoue"></p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<h3>
-🧠 Quiz
-</h3>
-
-
-<button onclick="quiz(true)">
-Retouche photo
-</button>
-
-
-<button onclick="quiz(false)">
-Livraison
-</button>
-
-
-<p id="resultatQuiz"></p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<h3>
-🎯 Défi créativité
-</h3>
-
-
-<button class="btn" onclick="defi()">
-
-Créer un défi
-
-</button>
-
-
-<p id="resultatDefi"></p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- ==========================
-     AVIS
-========================== -->
-
-
-<section id="avis">
-
-
-<h2 class="title">
-
-⭐ Avis clients
-
-</h2>
-
-
-<div class="card">
-
-
-<input id="nomAvis" placeholder="Votre nom">
-
-
-<textarea id="messageAvis" placeholder="Votre avis"></textarea>
-
-
-<button class="btn" onclick="ajouterAvis()">
-
-Publier
-
-</button>
-
-
-<div id="listeAvis"></div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- ==========================
-     CONTACT
-========================== -->
-
-
-<section id="contact">
-
-
-<h2 class="title">
-
-📞 Contact SLYWORD
-
-</h2>
-
-
-
-<div class="card">
-
-
-<p>
-
-WhatsApp :
-
-</p>
-
-
-<h2 style="color:#d4af37">
-
-+229 01 47 18 08 65
-
-</h2>
-
-
-
-<a class="btn" href="https://wa.me/2290147180865">
-
-Contacter SLYWORD
 
 </a>
 
@@ -1445,6 +3100,16 @@ Contacter SLYWORD
 </div>
 
 
+
+
+
+
+</div>
+
+
+</div>
+
+
 </section>
 
 
@@ -1452,13 +3117,614 @@ Contacter SLYWORD
 
 
 
-<footer style="text-align:center;padding:30px;background:#000;">
 
 
-© 2026 SLYWORD V4 - Création Digitale Professionnelle
+
+<style>
+
+
+/* ==========================
+   PAYMENT DESIGN
+========================== */
+
+
+.payment-box{
+
+
+padding:50px;
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+
+background:
+
+linear-gradient(
+
+135deg,
+
+rgba(108,59,255,.18),
+
+rgba(212,175,55,.10)
+
+);
+
+
+}
+
+
+
+
+
+.payment-tag{
+
+
+color:var(--gold-light);
+
+font-weight:800;
+
+display:inline-block;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.payment-content h2{
+
+
+font-size:40px;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.payment-number{
+
+
+font-size:22px;
+
+margin:30px 0;
+
+
+}
+
+
+
+
+
+.payment-number strong{
+
+
+color:var(--gold-light);
+
+
+}
+
+
+
+
+
+.security-card{
+
+
+padding:35px;
+
+text-align:center;
+
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+
+}
+
+
+
+
+
+.security-card div{
+
+
+font-size:50px;
+
+margin-bottom:15px;
+
+
+}
+
+
+
+
+
+/* ==========================
+   CONTACT
+========================== */
+
+
+
+.contact-grid{
+
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:30px;
+
+
+}
+
+
+
+
+
+.contact-card{
+
+
+padding:35px;
+
+
+}
+
+
+
+
+
+.contact-card h3{
+
+
+color:var(--gold-light);
+
+margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.contact-card ul{
+
+
+margin-top:20px;
+
+padding-left:20px;
+
+color:var(--gray);
+
+
+}
+
+
+
+
+
+.contact-card li{
+
+
+margin-bottom:10px;
+
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+
+.payment-box,
+
+
+.contact-grid{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.payment-content h2{
+
+
+font-size:30px;
+
+
+}
+
+
+
+}
+
+
+
+   </style><!-- ==========================
+     FOOTER PROFESSIONNEL
+========================== -->
+
+
+<footer class="footer">
+
+
+<div class="container footer-container">
+
+
+
+<div class="footer-brand">
+
+
+<h2>
+
+SLY<span>WORD</span>
+
+</h2>
+
+
+<p>
+
+Studio digital premium : retouche photo, design IA et créations visuelles professionnelles.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="footer-links">
+
+
+<h3>
+
+Navigation
+
+</h3>
+
+
+<a href="#accueil">
+
+Accueil
+
+</a>
+
+
+<a href="#services">
+
+Services
+
+</a>
+
+
+<a href="#commande">
+
+Commande
+
+</a>
+
+
+<a href="#contact">
+
+Contact
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-contact">
+
+
+<h3>
+
+Contact
+
+</h3>
+
+
+<p>
+
+📱 0147180865
+
+</p>
+
+
+<p>
+
+🇧🇯 Bénin
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<div class="copyright">
+
+
+© 2026 SLYWORD V4 - Tous droits réservés.
+
+
+</div>
+
+
 
 
 </footer>
+
+
+
+
+
+
+
+<!-- ==========================
+     RETOUR EN HAUT
+========================== -->
+
+
+<button id="topBtn">
+
+↑
+
+</button>
+
+
+
+
+
+
+
+
+<style>
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+
+.footer{
+
+
+padding:60px 8% 25px;
+
+
+background:#050912;
+
+
+border-top:
+
+1px solid rgba(255,255,255,.08);
+
+
+}
+
+
+
+
+
+.footer-container{
+
+
+display:grid;
+
+grid-template-columns:2fr 1fr 1fr;
+
+gap:50px;
+
+
+}
+
+
+
+
+
+.footer h2{
+
+
+font-size:32px;
+
+margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.footer h2 span{
+
+
+color:var(--gold);
+
+
+}
+
+
+
+
+
+.footer h3{
+
+
+color:var(--gold-light);
+
+margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.footer-links,
+
+
+.footer-contact{
+
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+
+}
+
+
+
+
+
+.footer-links a:hover{
+
+
+color:var(--gold);
+
+
+}
+
+
+
+
+
+.copyright{
+
+
+margin-top:50px;
+
+text-align:center;
+
+color:var(--gray);
+
+font-size:14px;
+
+
+}
+
+
+
+
+
+/* ==========================
+   TOP BUTTON
+========================== */
+
+
+#topBtn{
+
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+
+width:55px;
+
+height:55px;
+
+
+border-radius:50%;
+
+
+border:none;
+
+
+background:
+
+linear-gradient(
+
+135deg,
+
+var(--gold),
+
+var(--gold-light)
+
+);
+
+
+font-size:25px;
+
+font-weight:900;
+
+
+cursor:pointer;
+
+
+display:none;
+
+
+z-index:1000;
+
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+
+.footer-container{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+}
+
+
+
+</style>
 
 
 
@@ -1471,39 +3737,32 @@ Contacter SLYWORD
 <script>
 
 
-const whatsapp="2290147180865";
+// ==========================
+// RETOUR EN HAUT
+// ==========================
 
 
 
-const services=document.querySelectorAll(".service");
+const topBtn = document.getElementById("topBtn");
 
 
 
-services.forEach(s=>{
-
-s.addEventListener("change",calculer);
-
-});
+window.addEventListener("scroll",()=>{
 
 
-
-function calculer(){
-
-
-let total=0;
-
-let nombre=0;
+if(window.scrollY > 500){
 
 
+topBtn.style.display="block";
 
-services.forEach(s=>{
+
+}
+
+else{
 
 
-if(s.checked){
+topBtn.style.display="none";
 
-total+=Number(s.dataset.price);
-
-nombre++;
 
 }
 
@@ -1512,177 +3771,24 @@ nombre++;
 
 
 
-let reduction=0;
 
 
-
-if(nombre>=3){
-
-reduction=20;
-
-total=total-(total*0.20);
-
-}
+topBtn.onclick=()=>{
 
 
-
-document.getElementById("total").textContent=total;
-
-document.getElementById("reduction").textContent=reduction;
+window.scrollTo({
 
 
-}
+top:0,
 
-
-
-
-function commander(){
-
-
-let choix=[];
-
-
-services.forEach(s=>{
-
-
-if(s.checked){
-
-choix.push(s.value);
-
-}
+behavior:"smooth"
 
 
 });
 
 
+};
 
-let message=
-
-`Bonjour SLYWORD 👋
-
-Nouvelle commande.
-
-Client :
-${document.getElementById("nomClient").value}
-
-Services :
-${choix.join(", ")}
-
-Besoin :
-${document.getElementById("besoinClient").value}
-
-Le paiement sera effectué avant réalisation.`;
-
-
-window.open(
-
-"https://wa.me/"+whatsapp+"?text="+encodeURIComponent(message)
-
-);
-
-
-}
-
-
-
-
-
-
-function preuvePaiement(){
-
-
-window.open(
-
-"https://wa.me/"+whatsapp+"?text="+
-
-encodeURIComponent(
-"Bonjour SLYWORD, voici ma preuve de paiement."
-)
-
-);
-
-
-}
-
-
-
-
-
-
-
-function roue(){
-
-
-let tab=[
-
-"Créer une affiche",
-
-"Créer une publicité",
-
-"Imaginer un logo"
-
-];
-
-
-document.getElementById("resultatRoue").textContent=
-
-tab[Math.floor(Math.random()*tab.length)];
-
-
-}
-
-
-
-
-function quiz(rep){
-
-document.getElementById("resultatQuiz").textContent=
-
-rep?"Bonne réponse ✅":"Mauvaise réponse ❌";
-
-
-}
-
-
-
-
-function defi(){
-
-
-document.getElementById("resultatDefi").textContent=
-
-"Créer une publication professionnelle";
-
-
-}
-
-
-
-
-function ajouterAvis(){
-
-
-let nom=document.getElementById("nomAvis").value;
-
-let msg=document.getElementById("messageAvis").value;
-
-
-document.getElementById("listeAvis").innerHTML+=
-
-`
-
-<div class="card">
-
-<h3>${nom}</h3>
-
-<p>${msg}</p>
-
-</div>
-
-`;
-
-
-}
 
 
 
@@ -1690,6 +3796,11 @@ document.getElementById("listeAvis").innerHTML+=
 
 
 
+
+
+
+
+
 </body>
 
-    </html>
+   </html>
